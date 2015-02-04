@@ -1,0 +1,58 @@
+{
+  "amp0": 1.0,
+  "back_bound": "P",
+  "power": 1.6666667,
+  "bottom_bound": "W",
+  "front_bound": "P",
+  "num_fields": 2,
+  "shape_mesh": [
+    256,
+    256,
+    256
+  ],
+  "density": 1.0,
+  "rho_cp": 1.0,
+  "io_files": -256.0,
+  "pad_power": 0,
+  "uservp": 0,
+  "io_step": 25.0,
+  "viscosity": 0.000244140625,
+  "conductivity": 0.000244140625,
+  "restart": 0.0,
+  "scale_mesh": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "cps": 1,
+  "dim": 3,
+  "right_bound": "P",
+  "root_mesh": [
+    0.0,
+    0.0,
+    -0.5
+  ],
+  "courant": 0.4,
+  "top_bound": "W",
+  "num_steps": 200,
+  "nvel": 2,
+  "dealiasing_order": 12,
+  "extent_mesh": [
+    1,
+    1,
+    0.5
+  ],
+  "toldiv": 0.0,
+  "tolhelm": 0.0,
+  "order": 8,
+  "max_fft_procs": 0,
+  "dt": 4.8828125e-05,
+  "procs": 32768,
+  "tolabs": 0.0001,
+  "end_time": 0,
+  "io_time": 0.0,
+  "ngmres": 8,
+  "npres": 4,
+  "tolrel": 0.0001,
+  "left_bound": "P"
+}

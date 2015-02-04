@@ -1,0 +1,458 @@
+/----------------------------------------------------------\
+|      _   __ ______ __ __  ______  ____    ____    ____   |
+|     / | / // ____// //_/ / ____/ / __ \ / __ \ / __ \ |
+|    /  |/ // __/  / ,<   /___ \  / / / // / / // / / /   |
+|   / /|  // /___ / /| | ____/ / / /_/ // /_/ // /_/ /     |
+|  /_/ |_//_____//_/ |_|/_____/  \____/ \____/ \____/   |
+|                                                          |
+|----------------------------------------------------------|
+|                                                          |
+| NEK5000:  Open Source Spectral Element Solver            |
+| COPYRIGHT (c) 2008-2010 UCHICAGO ARGONNE, LLC            |
+| Version:  1.0rc1 / SVN  r1025                            |
+| Web:      http://nek5000.mcs.anl.gov                     |
+|                                                          |
+\----------------------------------------------------------/
+                                                              
+
+ Number of processors: 64
+ REAL    wdsize      : 8
+ INTEGER wdsize      : 4
+
+
+  Beginning session:
+  /projects/alpha-nek/ALCC-Benchmarks/p64/p64.rea                               
+
+ 
+ timer accuracy:   1.8956250E-07 sec
+
+ read .rea file
+ nelgt/nelgv/lelt:       32768       32768         512
+ lx1  /lx2  /lx3 :           8           8           8
+
+ mapping elements to processors
+ 0 512 512 32768 32768  NELV
+ 40 512 512 32768 32768  NELV
+ 1 512 512 32768 32768  NELV
+ 41 512 512 32768 32768  NELV
+ 2 512 512 32768 32768  NELV
+ 44 512 512 32768 32768  NELV
+ 3 512 512 32768 32768  NELV
+ 45 512 512 32768 32768  NELV
+ 8 512 512 32768 32768  NELV
+ 48 512 512 32768 32768  NELV
+ 9 512 512 32768 32768  NELV
+ 49 512 512 32768 32768  NELV
+ 4 512 512 32768 32768  NELV
+ 51 512 512 32768 32768  NELV
+ 5 512 512 32768 32768  NELV
+ 50 512 512 32768 32768  NELV
+ 6 512 512 32768 32768  NELV
+ 53 512 512 32768 32768  NELV
+ 7 512 512 32768 32768  NELV
+ 52 512 512 32768 32768  NELV
+ 11 512 512 32768 32768  NELV
+ 57 512 512 32768 32768  NELV
+ 10 512 512 32768 32768  NELV
+ 56 512 512 32768 32768  NELV
+ 15 512 512 32768 32768  NELV
+ 54 512 512 32768 32768  NELV
+ 14 512 512 32768 32768  NELV
+ 55 512 512 32768 32768  NELV
+ 21 512 512 32768 32768  NELV
+ 46 512 512 32768 32768  NELV
+ 20 512 512 32768 32768  NELV
+ 47 512 512 32768 32768  NELV
+ 12 512 512 32768 32768  NELV
+ 59 512 512 32768 32768  NELV
+ 13 512 512 32768 32768  NELV
+ 58 512 512 32768 32768  NELV
+ 17 512 512 32768 32768  NELV
+ 32 512 512 32768 32768  NELV
+ 16 512 512 32768 32768  NELV
+ 33 512 512 32768 32768  NELV
+ 19 512 512 32768 32768  NELV
+ 60 512 512 32768 32768  NELV
+ 18 512 512 32768 32768  NELV
+ 61 512 512 32768 32768  NELV
+ 24 512 512 32768 32768  NELV
+ 37 512 512 32768 32768  NELV
+ 25 512 512 32768 32768  NELV
+ 36 512 512 32768 32768  NELV
+ 26 512 512 32768 32768  NELV
+ 63 512 512 32768 32768  NELV
+ 27 512 512 32768 32768  NELV
+ 62 512 512 32768 32768  NELV
+ 22 512 512 32768 32768  NELV
+ 35 512 512 32768 32768  NELV
+ 23 512 512 32768 32768  NELV
+ 34 512 512 32768 32768  NELV
+ 28 512 512 32768 32768  NELV
+ 43 512 512 32768 32768  NELV
+ 29 512 512 32768 32768  NELV
+ 42 512 512 32768 32768  NELV
+ 30 512 512 32768 32768  NELV
+ 39 512 512 32768 32768  NELV
+ 31 512 512 32768 32768  NELV
+ 38 512 512 32768 32768  NELV
+ RANK     0 IEG       1       2       3       4       5       6       7       8
+                     33      34      35      36      37      38      39      40
+                     65      66      67      68      69      70      71      72
+                     97      98      99     100     101     102     103     104
+                    129     130     131     132     133     134     135     136
+                    161     162     163     164     165     166     167     168
+                    193     194     195     196     197     198     199     200
+                    225     226     227     228     229     230     231     232
+                   1025    1026    1027    1028    1029    1030    1031    1032
+                   1057    1058    1059    1060    1061    1062    1063    1064
+                   1089    1090    1091    1092    1093    1094    1095    1096
+                   1121    1122    1123    1124    1125    1126    1127    1128
+                   1153    1154    1155    1156    1157    1158    1159    1160
+                   1185    1186    1187    1188    1189    1190    1191    1192
+                   1217    1218    1219    1220    1221    1222    1223    1224
+                   1249    1250    1251    1252    1253    1254    1255    1256
+                   2049    2050    2051    2052    2053    2054    2055    2056
+                   2081    2082    2083    2084    2085    2086    2087    2088
+                   2113    2114    2115    2116    2117    2118    2119    2120
+                   2145    2146    2147    2148    2149    2150    2151    2152
+                   2177    2178    2179    2180    2181    2182    2183    2184
+                   2209    2210    2211    2212    2213    2214    2215    2216
+                   2241    2242    2243    2244    2245    2246    2247    2248
+                   2273    2274    2275    2276    2277    2278    2279    2280
+                   3073    3074    3075    3076    3077    3078    3079    3080
+                   3105    3106    3107    3108    3109    3110    3111    3112
+                   3137    3138    3139    3140    3141    3142    3143    3144
+                   3169    3170    3171    3172    3173    3174    3175    3176
+                   3201    3202    3203    3204    3205    3206    3207    3208
+                   3233    3234    3235    3236    3237    3238    3239    3240
+                   3265    3266    3267    3268    3269    3270    3271    3272
+                   3297    3298    3299    3300    3301    3302    3303    3304
+                   4097    4098    4099    4100    4101    4102    4103    4104
+                   4129    4130    4131    4132    4133    4134    4135    4136
+                   4161    4162    4163    4164    4165    4166    4167    4168
+                   4193    4194    4195    4196    4197    4198    4199    4200
+                   4225    4226    4227    4228    4229    4230    4231    4232
+                   4257    4258    4259    4260    4261    4262    4263    4264
+                   4289    4290    4291    4292    4293    4294    4295    4296
+                   4321    4322    4323    4324    4325    4326    4327    4328
+                   5121    5122    5123    5124    5125    5126    5127    5128
+                   5153    5154    5155    5156    5157    5158    5159    5160
+                   5185    5186    5187    5188    5189    5190    5191    5192
+                   5217    5218    5219    5220    5221    5222    5223    5224
+                   5249    5250    5251    5252    5253    5254    5255    5256
+                   5281    5282    5283    5284    5285    5286    5287    5288
+                   5313    5314    5315    5316    5317    5318    5319    5320
+                   5345    5346    5347    5348    5349    5350    5351    5352
+                   6145    6146    6147    6148    6149    6150    6151    6152
+                   6177    6178    6179    6180    6181    6182    6183    6184
+                   6209    6210    6211    6212    6213    6214    6215    6216
+                   6241    6242    6243    6244    6245    6246    6247    6248
+                   6273    6274    6275    6276    6277    6278    6279    6280
+                   6305    6306    6307    6308    6309    6310    6311    6312
+                   6337    6338    6339    6340    6341    6342    6343    6344
+                   6369    6370    6371    6372    6373    6374    6375    6376
+                   7169    7170    7171    7172    7173    7174    7175    7176
+                   7201    7202    7203    7204    7205    7206    7207    7208
+                   7233    7234    7235    7236    7237    7238    7239    7240
+                   7265    7266    7267    7268    7269    7270    7271    7272
+                   7297    7298    7299    7300    7301    7302    7303    7304
+                   7329    7330    7331    7332    7333    7334    7335    7336
+                   7361    7362    7363    7364    7365    7366    7367    7368
+                   7393    7394    7395    7396    7397    7398    7399    7400
+ element load imbalance:  0 512 512
+ done :: mapping elements to processors
+  
+ 0  objects found
+ done :: read .rea file    3.1568     sec
+
+ setup mesh topology
+   setvert3d:   8     4211712    11289600     4211712     4211712
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 544800 unique labels shared
+   pairwise times (avg, min, max): 0.00044262 0.000429444 0.000459392
+   crystal router                : 0.00784803 0.00780844 0.00788861
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 2.00386e+06 1965628 2042092
+   buffer bytes (avg, min, max): 295128 267280 322976
+   setupds time 1.5890E+00 seconds   0  8     4211712       32768
+ done :: setup mesh topology
+  
+ call usrdat
+ done :: usrdat
+
+ generate geometry data
+ vol_t,vol_v: 0.999999999999636513 0.999999999999636513
+ done :: generate geometry data
+  
+ geom setup time 0.433585271875003286
+ call usrdat2
+ done :: usrdat2
+
+ 103   Parameters from file:/projects/alpha-nek/ALCC-Benchmarks/p64/p64.rea
+   1      1.0       p1  DENSITY
+   2      0.001953125     p2  VISCOS
+   7      1.0        p7  RHOCP
+   8      0.001953125  p8  CONDUCT
+  11      200     p11 NSTEPS
+  12      0.000390625            p12 DT
+  14      0.1       p14 IOTIME
+  15      25.0       p15 IOSTEP
+  18      0.500000E-01    p18 GRID
+  19     -1.00000         p19 INTYPE
+  20      7.0000          p20 NORDER
+  24      0.0001        p24 TOLREL
+  25      0.0001        p25 TOLABS
+  26      0.4       p26 COURANT/NTAU
+  27      3.00000         p27 TORDER
+  28      0.              p28 TORDER: mesh velocity (0: p28=p27)
+  48      1.000000         p48 0=XXT, 1=SCPS
+  61      23.             p61 log_2(pad size): number of bytes to pad output fields to
+  65      -1.000000    p65 #iofiles (eg, 0 or 64); <0 --> sep. dirs
+  66      6.              p66 output : <0=ascii, else binary
+  67      6.              p67 restart: <0=ascii, else binary
+  68      1000.           p68 iastep: freq for avg_all
+  69      2.000000     p69 restart? > 0 means restart, outputting at frame p69+1
+  75      2.
+  92      2.000000         p92 Number of previous velocity solns saved
+  93      4.000000        p93 Number of previous pressure solns saved
+  94      5.00000          p94 start projecting velocity after p94 step
+  95      5.00000          p95 start projecting pressure after p95 step
+  99      4.00000          p99   dealiasing: <0--> off/3--> old/4--> new
+ 101      1.0000           p101   No. of additional filter modes
+ 102      1.00000          p102   Dump out divergence at each time step
+ 103      .050             p103   weight of stabilizing filter (.01)
+  
+ IFTRAN   = T
+ IFFLOW   = T
+ IFHEAT   = T
+ IFSPLIT  = T
+ IFLOMACH = F
+ IFUSERVP = F
+ IFUSERMV = F
+ IFSTRS   = F
+ IFCHAR   = F
+ IFCYCLIC = F
+ IFAXIS   = F
+ IFMVBD   = F
+ IFMELT   = F
+ IFMODEL  = F
+ IFKEPS   = F
+ IFMOAB   = F
+ IFNEKNEK = F
+ IFSYNC   = T
+   
+ IFVCOR   = T
+ IFINTQ   = F
+ IFCWUZ   = F
+ IFSWALL  = F
+ IFGEOM   = F
+ IFSURT   = F
+ IFWCNO   = F
+   
+ IFTMSH for field 1    =  F
+ IFADVC for field 1    =  T
+ IFNONL for field 1    =  F
+   
+ IFTMSH for field 2    =  F
+ IFADVC for field 2    =  T
+ IFNONL for field 2    =  F
+   
+ Dealiasing enabled, lxd= 12
+  
+ Estimated eigenvalues
+ EIGAA =  9.86960440108935799
+ EIGGA =  4007533.15264465008
+ EIGAE =  9.86960440108935799
+ EIGAS =  0.833333333333333287E-01
+ EIGGE =  4007533.15264465008
+ EIGGS =  2.00000000000000000
+  
+  E-solver strategy:  0 itr
+ mg_nx: 1 3 7
+ mg_ny: 1 3 7
+ mg_nz: 1 3 7
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 10272 unique labels shared
+   pairwise times (avg, min, max): 0.00024109 0.000223905 0.000254585
+   crystal router                : 0.000312844 0.000311865 0.000313876
+   all reduce                    : 0.000127878 0.00012648 0.000128524
+   used all_to_all method: allreduce
+   handle bytes (avg, min, max): 55972 54796 57148
+   buffer bytes (avg, min, max): 164352 164352 164352
+   setupds time 4.4576E-02 seconds   1  2       33792       32768
+   setvert3d:   4      631808      893952      631808      631808
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 98336 unique labels shared
+   pairwise times (avg, min, max): 0.000343209 0.000331789 0.000354807
+   crystal router                : 0.00158519 0.0015776 0.00159304
+   all reduce                    : 0.00410186 0.00398473 0.00414263
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 375188 367932 382444
+   buffer bytes (avg, min, max): 59096 53264 64928
+   setupds time 3.4306E-01 seconds   2  4      631808       32768
+   setvert3d:   6     2024448     4121600     2024448     2024448
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 276512 unique labels shared
+   pairwise times (avg, min, max): 0.000386393 0.000372672 0.000400194
+   crystal router                : 0.00408903 0.0040683 0.00410938
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 1.02671e+06 1007036 1046380
+   buffer bytes (avg, min, max): 154584 139792 169376
+   setupds time 7.4209E-01 seconds   3  6     2024448       32768
+ regenerate geometry data 1
+ vol_t,vol_v: 0.999999999999636513 0.999999999999636513
+ NOTE: All elements deformed , param(59) ^=0
+ done :: regenerate geometry data 1
+  
+ h1_mg_nx: 1 3 7
+ h1_mg_ny: 1 3 7
+ h1_mg_nz: 1 3 7
+   setvert3d:  10     7193600    23970816     7193600     7193600
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 903200 unique labels shared
+   pairwise times (avg, min, max): 0.000543155 0.00052958 0.000561248
+   crystal router                : 0.0131826 0.0131051 0.013247
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 3.30664e+06 3243708 3369580
+   buffer bytes (avg, min, max): 480728 435728 525728
+   setupds time 2.9297E+00 seconds   4 10     7193600       32768
+ pres setup time 84.1303979312500019
+ call usrdat3
+ done :: usrdat3
+
+BGQ: memory size = 247842943 247842943 246036352 
+BGQ: memory size = 247842943 247842943 246036352 
+ set initial conditions
+ trying to load restart files
+       0       0 OPEN: A0/p640.f00002
+ xyz min     0.0000       0.0000     -0.50000    
+ uvwpt min -0.55884     -0.56869     -0.28625       0.0000      -1.0000    
+ xyz max     1.0000       1.0000      0.50000    
+ uvwpt max  0.55884      0.56869      0.28625       0.0000       1.0000    
+ done :: set initial conditions
+  
+BGQ: memory size = 247842943 247842943 246036352 
+ call userchk
+BGQ: memory size = 247843103 247843103 246036192 
+ done :: userchk
+
+gridpoints unique/tot:      11289600     16777216
+  dofs: 124839244256 124839244256
+  
+ Initial time: 0.7812500E-01
+ Initialization successfully completed    96.808     sec
+
+Starting time loop ...
+
+     DT/DTCFL/DTFS/DTINIT   0.391E-03   0.141E-02   0.000E+00   0.391E-03
+Step      1, t= 7.8515625E-02, DT= 3.9062500E-04, C=  0.110 0.0000E+00 0.0000E+00
+             Solving for heat
+  Temperature/Passive scalar solution
+ 0.000000000000000000E+00  p22  1 1
+  1     1 Helmholtz TEMP    F:   1.4868E+00   6.1359E-07   1.9531E-03   2.5600E+03
+  1     2 Helmholtz TEMP    F:   2.8662E-01   6.1359E-07   1.9531E-03   2.5600E+03
+  1     3 Helmholtz TEMP    F:   6.7223E-02   6.1359E-07   1.9531E-03   2.5600E+03
+  1     4 Helmholtz TEMP    F:   1.5109E-02   6.1359E-07   1.9531E-03   2.5600E+03
+  1     5 Helmholtz TEMP    F:   3.8879E-03   6.1359E-07   1.9531E-03   2.5600E+03
+  1     6 Helmholtz TEMP    F:   9.2471E-04   6.1359E-07   1.9531E-03   2.5600E+03
+  1     7 Helmholtz TEMP    F:   2.2842E-04   6.1359E-07   1.9531E-03   2.5600E+03
+  1     8 Helmholtz TEMP    F:   5.1729E-05   6.1359E-07   1.9531E-03   2.5600E+03
+  1     9 Helmholtz TEMP    F:   6.8885E-06   6.1359E-07   1.9531E-03   2.5600E+03
+  1    10 Helmholtz TEMP    F:   1.2901E-06   6.1359E-07   1.9531E-03   2.5600E+03
+  1    11 Helmholtz TEMP    F:   2.7723E-07   6.1359E-07   1.9531E-03   2.5600E+03
+          1    Hmholtz TEMP:     10   2.7723E-07   1.4868E+00   6.1359E-07
+          1   7.8516E-02  2.5783E+00 Heat done
+ Solving for fluid T T T
+ Relax the pressure tolerance  2.94672460952645654 0.101317303570131743E-06
+ 0.000000000000000000E+00  p22  1 1
+MAX:    0    0    8    8    0    8    8    0    0    0    0    4    4    0    0
+MAX:    1    0    8    8    0    8    8    8    8    0    0    4    4    0    8
+MAX:    2    0    8    8    0    8    8   16   16    0    0    4    4    0   16
+MAX:    3    0    8    8    0    8    8   24   24    0    0    4    4    0   24
+MAX:    4    0    8    8    0    8    8    0    0    8    8    4    4    8    0
+MAX:    5    0    8    8    0    8    8    8    8    8    8    4    4    8    8
+MAX:    6    0    8    8    0    8    8   16   16    8    8    4    4    8   16
+MAX:    7    0    8    8    0    8    8   24   24    8    8    4    4    8   24
+MAX:    8    0    8    8    0    8    8    0    0   16   16    4    4   16    0
+MAX:    9    0    8    8    0    8    8    8    8   16   16    4    4   16    8
+MAX:   10    0    8    8    0    8    8   16   16   16   16    4    4   16   16
+MAX:   11    0    8    8    0    8    8   24   24   16   16    4    4   16   24
+MAX:   12    0    8    8    0    8    8    0    0   24   24    4    4   24    0
+MAX:   13    0    8    8    0    8    8    8    8   24   24    4    4   24    8
+MAX:   14    0    8    8    0    8    8   16   16   24   24    4    4   24   16
+MAX:   15    0    8    8    0    8    8   24   24   24   24    4    4   24   24
+MAX:   16    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   17    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   18    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   19    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   20    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   21    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   22    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   23    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   24    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   25    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   26    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   27    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   28    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   29    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   30    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   31    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   32    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   33    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   34    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   35    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   36    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   37    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   38    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   39    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   40    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   41    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   42    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   43    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   44    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   45    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   46    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   47    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   48    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   49    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   50    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   51    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   52    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   53    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   54    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   55    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   56    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   57    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   58    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   59    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   60    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   61    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   62    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+MAX:   63    0    0    0    0    0    0   -1   -1   -1   -1    4    4   17   17
+ Finished init 512
+ SCPS timers: 3.57355009312499305 3.57355009312499305
+    1 3.95771E-11 3.52539E-03 4.11426E-03 8.56871E-01       1 Divergence
+ SCPS timers: 0.654008662500018545E-01 3.63895095937499491
+    2 3.95771E-11 3.07307E-03 4.11426E-03 7.46931E-01       1 Divergence
+ SCPS timers: 0.652077406249986780E-01 3.70415869999999359
+    3 3.95771E-11 8.55349E-04 4.11426E-03 2.07899E-01       1 Divergence
+ SCPS timers: 0.653996812499997304E-01 3.76955838124999332
+    4 3.95771E-11 2.25146E-04 4.11426E-03 5.47233E-02       1 Divergence
+ SCPS timers: 0.652168581249839008E-01 3.83477523937497722
+    5 3.95771E-11 5.97943E-05 4.11426E-03 1.45334E-02       1 Divergence
+ SCPS timers: 0.651961375000098542E-01 3.89997137687498707
+    6 3.95771E-11 1.82299E-05 4.11426E-03 4.43092E-03       1 Divergence
+ SCPS timers: 0.654310187500186657E-01 3.96540239562500574
+    7 3.95771E-11 5.67700E-06 4.11426E-03 1.37984E-03       1 Divergence
+ SCPS timers: 0.652228118750031172E-01 4.03062520750000886
+    8 3.95771E-11 1.69374E-06 4.11426E-03 4.11676E-04       1 Divergence
