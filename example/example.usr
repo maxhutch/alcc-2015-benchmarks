@@ -1,0 +1,155 @@
+c-----------------------------------------------------------------------
+      subroutine uservp(ix,iy,iz,eg) 
+ 
+      return
+      end subroutine uservp
+c-----------------------------------------------------------------------
+      subroutine userf(ix,iy,iz,eg) 
+      include 'SIZE'
+      include 'NEKUSE'
+     
+c       Note: this is an acceleration term, NOT a forcec
+c       Thus, ffx will subsequently be multiplied by rho(x,t).
+     
+     
+      ffx = 0.0
+      ffy = 0.0
+      ffz = 0.0 
+     
+      return
+      end subroutine userf
+c-----------------------------------------------------------------------
+      subroutine userq(ix,iy,iz,eg) 
+      include 'SIZE'
+      include 'NEKUSE'
+ 
+      qvol   = 0.0
+ 
+      return
+      end subroutine userq
+c-----------------------------------------------------------------------
+      subroutine userq2(q) 
+ 
+      return
+      end subroutine userq2
+c-----------------------------------------------------------------------
+      subroutine userbc(ix,iy,iz,iside,ieg) 
+      include 'SIZE'
+      include 'NEKUSE'
+ 
+      ux   = 0.0
+      uy   = 0.0
+      uz   = 0.0
+      temp = 0.0
+ 
+      return
+      end subroutine userbc
+c-----------------------------------------------------------------------
+      subroutine useric(ix,iy,iz,eg) 
+      include 'SIZE'
+      include 'NEKUSE'
+ 
+      integer :: ix, iy, iz, eg
+ 
+      real :: scale, scale_tot, power
+      integer :: ind(3), my_shape(3), i, j
+      logical, save :: init = .false.
+      real, save :: rands(3,100)
+ 
+      if (.not. init) then
+        do i = 1, 100
+          rands(1,i) = 2. * (rand() - 0.5)
+          rands(2,i) = 2. * (rand() - 0.5)
+          rands(3,i) = 2. * (rand() - 0.5)
+        enddo
+        init = .true.
+      endif
+ 
+      my_shape = (/32, 32, 32/)
+      ind = ((/x, y, z/) - (/0.0, 0.0, -0.5/)) 
+     $ * my_shape / (
+     $ - (/1, 1, 0.5/)
+     $ - (/0.0, 0.0, -0.5/))
+      my_shape = my_shape * 8
+      ind = ind * 8 + (/ix, iy, iz/) - 1
+ 
+      ux = 0.; uy = 0.; uz = 0.
+      scale = 1.
+      scale_tot = 0.
+      power = 1.6666667
+      j = 1
+      do while (my_shape(1) > 1) 
+        ux = ux + scale * (1. - 2.*mod(ind(1),2)) * rands(1,j)
+        uy = uy + scale * (1. - 2.*mod(ind(1),2)) * rands(2,j)
+        uz = uz + scale * (1. - 2.*mod(ind(1),2)) * rands(3,j)
+        my_shape(1) = my_shape(1) / 2
+        ind(1) = ind(1) / 2
+        scale_tot = scale_tot 
+     $ + scale * sqrt(rands(1,j)**2 + rands(2,j)**2 + rands(3,j)**2)
+        scale = scale * (2. ** power)
+        j = j + 1
+      enddo
+      scale = 1.
+      do while (my_shape(2) > 1) 
+        ux = ux + scale * (1. - 2.*mod(ind(2),2)) * rands(1,j)
+        uy = uy + scale * (1. - 2.*mod(ind(2),2)) * rands(2,j)
+        uz = uz + scale * (1. - 2.*mod(ind(2),2)) * rands(3,j)
+        my_shape(2) = my_shape(2) / 2
+        ind(2) = ind(2) / 2
+        scale_tot = scale_tot 
+     $ + scale * sqrt(rands(1,j)**2 + rands(2,j)**2 + rands(3,j)**2)
+        scale = scale * (2. ** power)
+        j = j + 1
+      enddo
+      scale = 1.
+      do while (my_shape(3) > 1) 
+        ux = ux + scale * (1. - 2.*mod(ind(3),2)) * rands(1,j)
+        uy = uy + scale * (1. - 2.*mod(ind(3),2)) * rands(2,j)
+        uz = uz + scale * (1. - 2.*mod(ind(3),2)) * rands(3,j)
+        my_shape(3) = my_shape(3) / 2
+        ind(3) = ind(3) / 2
+        scale_tot = scale_tot 
+     $ + scale * sqrt(rands(1,j)**2 + rands(2,j)**2 + rands(3,j)**2)
+        scale = scale * (2. ** power)
+        j = j + 1
+      enddo
+      ux = 1.0 * ux / scale_tot
+      uy = 1.0 * uy / scale_tot
+      uz = 1.0 * uz / scale_tot
+ 
+      if (z > 0) then
+        temp = 1.0
+      else
+        temp = -1.0
+      endif
+ 
+      return
+      end subroutine useric
+c-----------------------------------------------------------------------
+      subroutine userchk()
+      include 'SIZE'
+      include 'TSTEP'
+      include 'SOLN'
+ 
+      if (istep == 0) call outpost(vx,vy,vz,pr,t,'   ')
+ 
+ 
+      return
+      end subroutine userchk
+c-----------------------------------------------------------------------
+      subroutine usrdat()   
+ 
+      return
+      end subroutine usrdat
+c-----------------------------------------------------------------------
+      subroutine usrdat2()  
+ 
+ 
+      return
+      end subroutine usrdat2
+c-----------------------------------------------------------------------
+      subroutine usrdat3()
+ 
+      return
+      end subroutine usrdat3
+c-----------------------------------------------------------------------
